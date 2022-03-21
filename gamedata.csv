@@ -1,0 +1,36 @@
+MOB,Beholder,100,15,2,D10
+MOB,Mind Flyer,75,12,1,D8
+MOB,Red Dragon,120,17,4,D12
+MOB,Bugbear,25,12,0,D4
+MOB,Orc,50,14,1,D6
+MOB,Gelatinous Cube,50,8,1,D6
+MOB,Stone Giant,65,14,2,D8
+MOB,Frost Giant,75,15,3,D10
+MOB,Kobold,25,9,-1,D4
+MOB,Umber Hulk,55,13,1,D6
+FORTUNE,Prowess,0,0,2,D12
+FORTUNE,Valor,10,0,0,-
+FORTUNE,Excellence,10,0,0,D12
+FORTUNE,Justice,5,2,1,-
+FORTUNE,Temperance,10,3,-1,D6
+FORTUNE,Loyalty,0,4,0,-
+FORTUNE,Obedience,0,3,1,-
+FORTUNE,Faithfulness,10,2,1,-
+FORTUNE,Defense,0,5,-2,-
+FORTUNE,Selflessness,10,0,1,-
+FORTUNE,Sacrifice,-10,2,2,-
+FORTUNE,Courage,0,1,1,-
+FORTUNE,Integrity,10,2,2,-
+FORTUNE,Honesty,15,0,0,-
+FORTUNE,Faith,0,1,0,-
+FORTUNE,Perseverance,15,0,0,-
+FORTUNE,Wisdom,0,1,1,D12
+FORTUNE,Humility,0,1,0,-
+FORTUNE,Morality,0,0,0,D6
+FORTUNE,Largesse,0,0,0,D12
+FORTUNE,Generosity,0,0,1,-
+FORTUNE,Kindness,20,1,-3,-
+FORTUNE,Nobility,10,1,1,-
+FORTUNE,Charity,0,2,0,-
+FORTUNE,Franchise,0,0,1,-
+FORTUNE,Accountability,0,1,0,-
