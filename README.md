@@ -16,13 +16,10 @@ to design the layout of the game, your job is to implement it in its entirety as
 The software architect has provided you with the following resources:
 
 * [Knight Fight - UML Diagram](knightfightUML.pdf) 
-* [Knight Fight - Java Documentation](https://www.cs.colostate.edu/javadoc/practical/knightfight/allclasses-index.html)
+* [Knight Fight - Java Documentation](https://www.cs.colostate.edu/~cs163/javadoc/practical/knightfight/allclasses-index.html)
 
-You should familiarize yourself with the UML. Anything in the UML specification is viable for testing/grading. However,
-you will notice no private variables or methods are listed (+ == public, # == protected). You will need to have
-private variables, and free to implement as many private helper methods as you need (we had many). Once you
-familiarize yourself with the UML, you should use the java documentation as a guideline of what to write for
-each method. 
+You should familiarize yourself with the UML. Anything in the UML specification is viable for testing/grading. Not all private variables and methods are listed, but some are to help you out. (+ == public, # == protected). You will need to have
+private variables, and feel free to implement as many private helper methods as you need (we had many). Once you familiarize yourself with the UML, you should use the java documentation as a guideline of what to write for each method. 
 
 
 ## Required Features To Implement
@@ -254,7 +251,7 @@ To encourage students to not  wait until the last minute to submit, the project 
 
 
 ## Using Other Code?
-You are very free to use code from the other assignments. 
+You are very free to use code from the other assignments, but you should not copy code from other people. This will flag as plagiarism.  
 
 ## Other Hints and Guidelines
 * List?  
@@ -299,9 +296,11 @@ You are very free to use code from the other assignments.
 
 ## Turning In
 Turning in your code. You must submit through zybooks, and even if the file doesn't have anything in it besides
-the class definition, you will still need to submit it.  This is required by the autograder. As this is a **summative** 
+the class definition, you will still need to submit it.  This is required by the autograder. 
+
+As this is a **summative** 
 assignment you get 10 (5+5) submission attempts only. 5 submission attempts will be in Part 1, and 5 submission attempts will be
-in Part 2. You can turn in  Part 1 late without penalty, **but** Part 2 will have a hard cutoff due to finals week deadline restrictions. 
+in Part 2. You can turn in  Part 1 late without penalty, **but** both parts will have a hard cutoff due to finals week deadline restrictions. 
 
 Testing becomes extremely important before submitting. We even encourage you to share the code you use for testing (only your _test_ code) in MS Teams.
 
@@ -323,6 +322,6 @@ If you really enjoyed this project, then we recommend extending it over the brea
 practice coding before your next coding class. Some ideas for extension
 
 * Add javadoc to all your methods, and generate the webpages for it all
-* Add the ability to have inventory items, each with their own attributes they provide bonuses to
+* Add the ability to have inventory items, each with their own attributes they provide bonuses.
 * Build a 'choose your own adventure book' into the game. Based on choices, where does the
 quest take the knight?
