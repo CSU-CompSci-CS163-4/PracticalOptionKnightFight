@@ -15,7 +15,6 @@ class Attributes {
 }
 class DiceType{
     <<Enumeration>>
-    -Dicetype()
     +DiceType : D4
     +DiceType : D6
     +DiceType : D8
@@ -86,12 +85,6 @@ classDiagram
 GameData <|-- CSVGameData
 GameView <|-- ConsoleView
 
-class Main {
-    -String : gamedata
-    -String : saveData
-    +main(String) void
-    -processArgs(String) void
-}
 class GameData {
     #List<Knight> : activeKnights
     #List<Fortune> : fortunes
@@ -128,17 +121,6 @@ class GameView {
     showKnight(Knight) void
     splashScreen() void
 }
-class CombatEngine {
-    -GameData : data
-    -DiceSet : dice
-    -Random : rnd
-    -GameView : view
-    +CombatEngine(GameData, GameView)
-    +clear() void
-    -doBattle(List<MOB>, List<MOB>) int
-    +initialize() void
-    +runCombat() void 
-}
 class ConsoleView {
     -Scanner : in
     +ConsoleView()
@@ -164,6 +146,20 @@ class CSVGameData {
     -readFile(String) Scanner
     +save(String) void
 }
+```
+```mermaid
+classDiagram
+class CombatEngine {
+    -GameData : data
+    -DiceSet : dice
+    -Random : rnd
+    -GameView : view
+    +CombatEngine(GameData, GameView)
+    +clear() void
+    -doBattle(List<MOB>, List<MOB>) int
+    +initialize() void
+    +runCombat() void 
+}
 class GameController {
     -GameData : data
     -CombatEngine : engine
@@ -175,5 +171,10 @@ class GameController {
     -processShowKnight(String) void
     +start() void
 }
-
+class Main {
+    -String : gamedata
+    -String : saveData
+    +main(String) void
+    -processArgs(String) void
+}
 ```
