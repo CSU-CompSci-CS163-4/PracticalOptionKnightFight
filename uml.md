@@ -86,6 +86,7 @@ GameData <|-- CSVGameData
 GameView <|-- ConsoleView
 
 class GameData {
+    <<Abstract>>
     #List<Knight> : activeKnights
     #List<Fortune> : fortunes
     #List<Knight> : knights
