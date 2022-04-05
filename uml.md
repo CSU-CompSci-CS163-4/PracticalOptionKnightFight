@@ -103,8 +103,8 @@ class GameData {
     +getRandomMonsters() List<MOB>
     +getRandomMonsters(int) List<MOB>
     +removeActive(Knight) void
-    +save(String) void
     +setActive(Knight) boolean
+    +(abstract) save(String) void
 }
 class GameView {
     <<Interface>>
