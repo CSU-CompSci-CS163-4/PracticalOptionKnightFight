@@ -16,7 +16,7 @@ to design the layout of the game, your job is to implement it in its entirety as
 The software architect has provided you with the following resources:
 
 * [Knight Fight - UML Diagram](uml.md) 
-* [Knight Fight - Java Documentation](https://www.cs.colostate.edu/~cs163/javadoc/practical/knightfight/allclasses-index.html)
+* [Knight Fight - Java Documentation](https://csu-compsci-cs163-4.github.io/PracticalOptionKnightFight/package-summary.html)
 
 You should familiarize yourself with the UML. Anything in the UML specification is viable for testing/grading. Not all private variables and methods are listed, but some are to help you out. (+ == public, # == protected). You will need to have
 private variables, and feel free to implement as many private helper methods as you need (we had many). Once you familiarize yourself with the UML, you should use the java documentation as a guideline of what to write for each method. 
