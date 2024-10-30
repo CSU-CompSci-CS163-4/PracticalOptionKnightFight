@@ -478,15 +478,18 @@ loadScripts(document, 'script');</script>
  +============================+
  </pre>
  
- The split for the spacing is:
- <ul>
-     <li>30 characters wide</li>
-     <li>Name uses %-27s</li>
-     <li>id uses %-23d (as a space is required between id: and the value</li>
-     <li>health, Power - both %-6d</li>
-     <li> XP %-7d</li>
-     <li> Armor: %-4d</li>
- </ul></div>
+ For this assignment we use the following format
+ <pre><code>
+  return "+============================+\n" +
+          String.format("| %-27s|%n", getName()) +
+          String.format("| id: %-23d|%n", getId()) +
+          "|                            |\n" +
+          String.format("| Health: %-6d  XP: %-7d|%n", getHP(), getXP())  +
+          String.format("|  Power: %-6s  Armor: %-4d|%n", getDamageDie().toString(), getArmor()) +
+          "|                            |\n" +
+          "+============================+";
+ </code></pre>
+ </div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code><a href="MOB.html#toString()">toString</a></code>&nbsp;in class&nbsp;<code><a href="MOB.html" title="class in Unnamed Package">MOB</a></code></dd>
