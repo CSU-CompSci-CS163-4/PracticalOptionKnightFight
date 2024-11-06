@@ -383,15 +383,17 @@ implements <a href="Attributes.html" title="interface in Unnamed Package">Attrib
  </pre>
  
  Spacing is -22s for the name, 12s for the HP Bonus, 12s for the AC bonus, 11s
- for the hit bonus and 10s for the damage adj. Note: AC is armor., so you are
- looking at using the following methods:
- <ul>
- <li><a href="#getName()"><code>getName()</code></a></li>
- <li><a href="#getMaxHP()"><code>getMaxHP()</code></a> (for HP Bonus)</li>
- <li><a href="#getArmor()"><code>getArmor()</code></a> (for AC Bonus)</li>
- <li><a href="#getHitModifier()"><code>getHitModifier()</code></a> (For hit bonus)</li>
- <li><a href="#getDamageDie()"><code>getDamageDie()</code></a> (For Damage Adj. Note if null, put in a dash  - good case for the ternary operator ?)</li>
- </ul></div>
+ for the hit bonus and 10s for the damage adj. Note: AC is Armor
+ Use the following output for ToString
+ <pre><code>
+        return "+======================+\n" +
+                String.format("|%-22s|%n", getName()) +
+                String.format("|HP Bonus: %12s|%n", "+" + getMaxHP()) +
+                String.format("|AC Bonus: %12s|%n", "+" + getArmor()) +
+                String.format("|Hit Bonus: %11s|%n", "+" + getHitModifier()) +
+                String.format("|Damage Adj: %10s|%n", getDamageDie() != null ? getDamageDie() : "-") +
+                "+======================+";
+ </code></pre>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></dd>
