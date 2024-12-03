@@ -216,7 +216,7 @@ loadScripts(document, 'script');</script>
  the objects to run the game, and passes control over to the GameController. Example code
  includes
  <pre>
-     parseArgs(args); // method that parses the args, optional but cleaned up the code
+     processArgs(args); // method that parses the args, optional but cleaned up the code
      GameData data = new CSVGameData(gamedata, saveData);
      GameView view  = new ConsoleView();
      CombatEngine engine = new CombatEngine(data, view);
