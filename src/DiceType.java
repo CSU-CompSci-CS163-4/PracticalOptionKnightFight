@@ -4,7 +4,7 @@ public enum DiceType {
 	private final int size;
 	public static Random random_machine;
 
-	private Dice(int size) {
+	private DiceType(int size) {
 		this.size = size;
 	}
 	/***
