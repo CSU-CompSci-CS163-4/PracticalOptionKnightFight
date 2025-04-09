@@ -217,8 +217,6 @@ this point, the flag of 'oh, I can write one of those' should trigger.
 Based on that idea, the first classes you should actually look at implementing is
 
 * DiceType
-* DiceSet (relatively easy, only one method, only dependent on DiceType)
-  - Make sure to test!
 * Attributes
 * Fortune
   - Make sure to test!
@@ -243,7 +241,6 @@ A quick hint, you will be starting small, and then adding a bunch of items to Ar
 To encourage students to not  wait until the last minute to submit, the project is broken into two parts. The first part is actually the classes just mentioned above only
 
 * DiceType
-* DiceSet
 * Attributes
 * Fortune
 * MOB
@@ -251,7 +248,9 @@ To encourage students to not  wait until the last minute to submit, the project 
 
 
 ## Using Other Code?
-You are very free to use code from the other assignments, but you should not copy code from other people. This will flag as plagiarism.  
+You are very free to use code from the other assignments, but you DO NOT copy code from other people. This will flag as plagiarism.  
+
+We will be searching for know sollutions and running measures of code similarity. IF you use an existing sollution or use code from another student you will be penalized and given a NEGATIVE grade on the assignment.
 
 ## Other Hints and Guidelines
 * List?  
@@ -295,16 +294,26 @@ You are very free to use code from the other assignments, but you should not cop
   The easiest way to get stuck on this assignment is to try everything at once. Instead treat each file  as an individual project/assignment.  You will find that start plugging into each other quickly as long as you make sure the individual methods and classes are working. 
 
 ## Turning In
-Turning in your code. You must submit through zybooks, and even if the file doesn't have anything in it besides
-the class definition, you will still need to submit it.  This is required by the autograder. 
+Turning in your code. You will submit a zip file containing all of your code components. For Part 1 this will only include 3 files 
+1. Fortune.java
+2. MOB.java
+3. Knight.java
 
-As this is a **summative** 
-assignment you get 10 (5+5) submission attempts only. 5 submission attempts will be in Part 1, and 5 submission attempts will be
-in Part 2. You can turn in  Part 1 late without penalty, **but** both parts will have a hard cutoff due to finals week deadline restrictions. 
+For Part 2 you will need 
+1. Fortune.java
+2. MOB.java
+3. Knight.java
+4. GameData.java
+5. CSVGameData.java
+6. GameView.java
+7. ConsoleView.java
+8. GameController.java
+9. CombatEngine.java
+10. Main.java
 
-Testing becomes extremely important before submitting. We even encourage you to share the code you use for testing (only your _test_ code) in MS Teams.
+For Part 1 the grading script will run each night at 7:00 PM MST. And will be open until the close date of Part 2. Part 2 will run Monday, Wendesday, Friday, & Sunday at 7:00 PM on those nights.
 
-
+You have as many attempts as you give yourself the time for. If you wait until the due date you will have less feedback attempts than if you start the assignment early.
 
 > **Software Architecture and Game Design**  
 > This assignment really highlights two areas, software architecture and game design. The design and implementation
