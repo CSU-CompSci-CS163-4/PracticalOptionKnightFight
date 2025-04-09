@@ -21,11 +21,8 @@ class DiceType{
     +DiceType : D10
     +DiceType : D12
     +DiceType : D20
-}
-class DiceSet{
-    -Random : dice
-    +DiceSet()
-    +roll(DiceType): int
+    -size : int
+    +Roll() int
 }
 class Fortune {
     -int : armor
@@ -152,7 +149,6 @@ class CSVGameData {
 classDiagram
 class CombatEngine {
     -GameData : data
-    -DiceSet : dice
     -Random : rnd
     -GameView : view
     +CombatEngine(GameData, GameView)
