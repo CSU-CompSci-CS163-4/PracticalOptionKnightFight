@@ -21,7 +21,9 @@ class DiceType{
     +DiceType : D10
     +DiceType : D12
     +DiceType : D20
-    -size : int
+    -int : SIZE
+    -Random : random_machine$
+    -Dice(size : int)
     +Roll() int
 }
 class Fortune {
