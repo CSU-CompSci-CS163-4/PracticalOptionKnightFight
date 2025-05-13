@@ -96,11 +96,6 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">The data for the game, passed in as part of the constructor.</div>
 </div>
-<div class="col-first odd-row-color"><code>private final <a href="DiceSet.html" title="class in Unnamed Package">DiceSet</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#dice" class="member-name-link">dice</a></code></div>
-<div class="col-last odd-row-color">
-<div class="block">A DiceSet to be used for the Combat engine</div>
-</div>
 <div class="col-first even-row-color"><code>private final <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html" title="class or interface in java.util" class="external-link">Random</a></code></div>
 <div class="col-second even-row-color"><code><a href="#rnd" class="member-name-link">rnd</a></code></div>
 <div class="col-last even-row-color">
@@ -215,13 +210,7 @@ loadScripts(document, 'script');</script>
 </dl>
 </section>
 </li>
-<li>
-<section class="detail" id="dice">
-<h3>dice</h3>
-<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type"><a href="DiceSet.html" title="class in Unnamed Package">DiceSet</a></span>&nbsp;<span class="element-name">dice</span></div>
-<div class="block">A DiceSet to be used for the Combat engine</div>
-</section>
-</li>
+
 <li>
 <section class="detail" id="rnd">
 <h3>rnd</h3>
@@ -307,7 +296,7 @@ loadScripts(document, 'script');</script>
 </p>
  
  <p><b>Calculating Hits</b><br>
- To calculate a successful hit, you roll a D20  (<a href="DiceSet.html#roll(DiceType)"><code>DiceSet.roll(DiceType)</code></a> take that 
+ To calculate a successful hit, you roll a D20  (<a href="DiceType.html#roll()"><code>DiceType.roll</code></a> take that 
  value, add the MOBs/Knights toHitModifier. If the value is greater than the armor value, they  score
  a hit, and the damage die is rolled. 
  </p>
@@ -325,7 +314,7 @@ loadScripts(document, 'script');</script>
 <dt>See Also:</dt>
 <dd>
 <ul class="see-list">
-<li><a href="DiceSet.html#roll(DiceType)"><code>DiceSet.roll(DiceType)</code></a></li>
+<li><a href="DiceType.html#roll()"><code>DiceType.roll()</code></a></li>
 </ul>
 </dd>
 </dl>
